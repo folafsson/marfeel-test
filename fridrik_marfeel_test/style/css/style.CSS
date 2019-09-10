@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body{
+    font-family: Source Sans Pro,sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+/*start adding font colors */
+.title{
+  color: #acacac;  
+  font-weight: 100;
+  margin: 0!important;
+  padding: 0!important;
+  transform: translateY(200px);
+}
+.total{
+    margin: 0!important;
+    padding: 0!important;
+    color: #353535;
+    font-weight: bold;
+    transform: translateY(200px);
+}
+
+.device{
+    font-weight: bold;
+    margin: 0;
+}
+.amount{
+    color: #acacac;
+}
+b{
+    color: #353535;
+}
+/* end adding font colors*/
+
+/* chart containers */
+#visits, #revenue, #impressions{
+    margin: 25px auto;
+    border-bottom: 2px solid #acacac;
+    width: 75%
+}
+/* carousel start */
+.my-carousel {
+    border-style:solid;
+    border-width:1px;
+    border-color:rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    width:100%;
+    height:550px;
+    margin: 15px auto;
+}
+
+.my-carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:550px;
+}
+
+.my-carousel-open:checked + .my-carousel-item {
+    position: absolute;
+    opacity: 100;
+    background-color:white;
+    width:100%;
+    height:250px;
+}
+
+.my-carousel-item {
+    position: absolute;
+    opacity: 0;
+    padding-top:10px;
+    text-align:center;
+}
+
+.my-carousel-control {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    color:#acacac;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.my-carousel-control.my-prev {
+    left: 2%;
+}
+
+.my-carousel-control.my-next {
+    right: 2%;
+}
+
+.my-carousel-control:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #008c6c;
+}
+
+#my-carousel-1:checked ~ .my-control-1,
+#my-carousel-2:checked ~ .my-control-2,
+#my-carousel-3:checked ~ .my-control-3,
+#my-carousel-4:checked ~ .my-control-4,
+#my-carousel-5:checked ~ .my-control-5{
+    display: block;
+}
+
+.my-carousel-indicators {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.my-carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.my-carousel-bullet {
+    color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.my-carousel-bullet:hover {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+#my-carousel-1:checked ~ .my-control-1 ~ .my-carousel-indicators li:nth-child(1) .my-carousel-bullet,
+#my-carousel-2:checked ~ .my-control-2 ~ .my-carousel-indicators li:nth-child(2) .my-carousel-bullet,
+#my-carousel-3:checked ~ .my-control-3 ~ .my-carousel-indicators li:nth-child(3) .my-carousel-bullet,
+#my-carousel-4:checked ~ .my-control-4 ~ .my-carousel-indicators li:nth-child(4) .my-carousel-bullet,
+#my-carousel-5:checked ~ .my-control-5 ~ .my-carousel-indicators li:nth-child(5) .my-carousel-bullet{
+    color: #008c6c;
+}
+/*  carousel end */
+#line-graph{
+    margin: 0 auto;
+    transform: translateY(-220px);
+}
+.line{
+    fill: none;
+    /* stroke: #86D43D; */
+    stroke-width: 2px;
+}
+/* setting the color manually - data pulling not working*/
+.visits-color-tablet{
+    color: #F5BF32;
+}
+.visits-color-smartphone{
+    color:#BD571C;
+}
+.revenue-color-tablet{
+    color: #3D6D14!important;
+}
+.revenue-color-smartphone{
+    color: #86D43D!important;
+}
+.impressions-color-tablet{
+    color:#6EC7E2;
+}
+
+.impressions-color-smartphone{
+    color:#385663;
+}
+/*End manual text color*/
